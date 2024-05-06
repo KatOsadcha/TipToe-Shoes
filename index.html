@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TipToe Soles: home</title>
+
+    <meta
+      name="Kateryna Osadcha"
+      content="   kateryna.osadcha@studytafensw.edu.au   "
+    />
+
+    <link rel="stylesheet" href="tip_toe_styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA ICON -->
+    <script
+      src="https://kit.fontawesome.com/b174f23c46.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header id="image1">
+        <div id="header-wrapper">
+          <div id="header-inner-wrapper">
+            <img
+              src="images/tiptoe_soles_logo_colour.png"
+              alt="TipToe Soles logo"
+              width="100"
+              height="100"
+            />
+            <h1>TipToe Soles</h1>
+          </div>
+        </div>
+      </header>
+
+      <div id="menu">
+        <div class="mobile-menu-wrapper">
+          <span id="openbtn">&#9776;</span>
+          <a href="index.html"
+            ><img
+              src="images/tiptoe_soles_logo_colour.png"
+              alt="TipToe Soles logo"
+              width="35"
+              height="35"
+          /></a>
+        </div>
+      </div>
+
+      <nav id="navig" class="overlay">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <div id="overlay-content">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img
+                src="images/tiptoe_soles_logo_colour.png"
+                alt="TipToe Soles logo"
+                width="60"
+                height="60"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="index.html" id="current">Home</a></li>
+            <li><a href="men.html">Mens</a></li>
+            <li><a href="women.html">Womens</a></li>
+            <li><a href="size.html">Sizes</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <h2>About Us</h2>
+          <p>
+            TipToe Soles is an Australian owned and operated company that has
+            been designing and manufacturing comfortable footwear for over 20
+            years. We are passionate about creating shoes that are both stylish
+            and functional, and that will keep your feet happy all day long.
+          </p>
+          <p>
+            We believe that everyone deserves to have access to high-quality,
+            affordable footwear, and that's why we offer a wide range of shoes
+            to suit every budget and lifestyle. Whether you're looking for a
+            comfortable pair of sneakers for everyday wear, or a stylish pair of
+            heels for a special occasion, we have the perfect shoes for you.
+          </p>
+          <p>
+            At TipToe Soles, we are committed to providing our customers with
+            the best possible shopping experience. That's why we offer a variety
+            of convenient features, such as free shipping on orders over $60, a
+            generous exchange and returns policy, and friendly customer service.
+          </p>
+          <p>
+            We are also proud to be a sustainable company. We use high-quality
+            materials and construction methods to ensure that our shoes last,
+            and we are constantly looking for ways to reduce our environmental
+            impact.
+          </p>
+        </section>
+        <div id="image2">
+          <section class="page-content">
+            <!-- <div class="page-content-wrapper"> -->
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Men's shoes</h2>
+                <p class="copy">
+                  Do you want to see more? Check our page to find the best pair
+                  for you!
+                </p>
+                <div class="btn"><a href="men.html">More options</a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Women's shoes</h2>
+                <p class="copy">
+                  Do you like this shoes but want to see more option? Check for
+                  more!
+                </p>
+                <div class="btn"><a href="women.html">Find my pair</a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Size table</h2>
+                <p class="copy">
+                  Not sure what is your size? You can check it here!
+                </p>
+                <div class="btn"><a href="size.html">Check my size</a></div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <p><a href="policy.html">Our Policies</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </footer>
+    </div>
+    <script>
+      let navi = document.getElementById("navig");
+      let closebtn = document.getElementById("closebtn");
+      let openbtn = document.getElementById("openbtn");
+
+      openbtn.onclick = openNav;
+      closebtn.onclick = closeNav;
+
+      function openNav() {
+        navi.style.height = "56%";
+        navi.style.width = "100%";
+      }
+
+      function closeNav() {
+        navi.style.height = "0%";
+      }
+    </script>
+  </body>
+</html>

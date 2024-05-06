@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TipToe Soles: Contact Us</title>
+
+    <meta
+      name="Kateryna Osadcha"
+      content="   kateryna.osadcha@studytafensw.edu.au   "
+    />
+
+    <link rel="stylesheet" href="tip_toe_styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA ICON -->
+    <script
+      src="https://kit.fontawesome.com/b174f23c46.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="contact">
+    <div id="wrapper">
+      <header id="contact-head">
+        <h1>Contact Us</h1>
+        <img
+          src="images/tiptoe_soles_logo_colour.png"
+          alt="Tip Toe Soles logo"
+          width="80"
+          height="80"
+        />
+      </header>
+
+      <div id="menu">
+        <div class="mobile-menu-wrapper">
+          <span id="openbtn">&#9776;</span>
+          <a href="index.html"
+            ><img
+              src="images/tiptoe_soles_logo_colour.png"
+              alt="TipToe Soles logo"
+              width="35"
+              height="35"
+          /></a>
+        </div>
+      </div>
+
+      <nav id="navig" class="overlay">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <div id="overlay-content">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img
+                src="images/tiptoe_soles_logo_colour.png"
+                alt="TipToe Soles logo"
+                width="60"
+                height="60"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Mens</a></li>
+            <li><a href="women.html">Womens</a></li>
+            <li><a href="size.html">Sizes</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <div class="contact-wrapper">
+          <div id="spacer"></div>
+          <div class="contact-inner-wrapper">
+            <section class="sec-1 sec">
+              <h2>Find Us</h2>
+              <h3>Telephone:</h3>
+              <p>02 9210 5000</p>
+              <h3>Email:</h3>
+              <p>
+                <a href="https://gmail.com/" target="_blank">
+                  TipToeShoes@gmail.com
+                </a>
+              </p>
+              <h3>Address:</h3>
+              <div id="address">
+                <p>322 Avondale Road,</p>
+                <p>Enfield NSW 2133</p>
+              </div>
+              <h3 id="label-map">We are on map:</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6623.923145327673!2d151.09201089236342!3d-33.890643499358326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s322%20Avondale%20Road%2C%20Enfield%20NSW%202133!5e0!3m2!1sen!2sau!4v1699233810323!5m2!1sen!2sau"
+                width="250"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </section>
+            <section class="sec-2 sec">
+              <h2>Get In Touch</h2>
+              <form>
+                <div>
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="telephone">Phone number:</label>
+                  <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    autocomplete="tel"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit" />
+              </form>
+            </section>
+          </div>
+          <div id="spacer2"></div>
+        </div>
+      </main>
+
+      <footer>
+        <p><a href="policy.html">Our Policies</a></p>
+        <p><a href="contact.html" id="current">Contact Us</a></p>
+      </footer>
+    </div>
+
+    <script>
+      let navi = document.getElementById("navig");
+      let closebtn = document.getElementById("closebtn");
+      let openbtn = document.getElementById("openbtn");
+
+      openbtn.onclick = openNav;
+      closebtn.onclick = closeNav;
+
+      function openNav() {
+        navi.style.height = "56%";
+        navi.style.width = "100%";
+      }
+
+      function closeNav() {
+        navi.style.height = "0%";
+      }
+    </script>
+  </body>
+</html>
